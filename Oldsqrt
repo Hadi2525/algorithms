@@ -54,6 +54,9 @@ def digit_sep(n):
       two_digit_str = [digit_n[i:i+2] for i in range(1,len(digit_n),2)]
       two_digit_str.insert(0,digit_n[0])
    return two_digit_str
+   
+   
+############## Example:
 n = 32516
 string_n = digit_sep(n) 
 print(string_n)
