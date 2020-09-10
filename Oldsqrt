@@ -11,6 +11,7 @@ import math
 
 # Main Function Call >>>>>
 def oldsqrt(n):
+   n = int(n*1e20)
    two_digit_str = digit_sep(n)
    res_digit = str(object='')
 #    while True:
@@ -41,6 +42,7 @@ def oldsqrt(n):
                
                
        res_digit = next_num      
+   res_num = str(int(res_num)/1e10)
    return res_num
        
 def digit_sep(n):
@@ -57,7 +59,7 @@ def digit_sep(n):
    
    
 ############## Example:
-n = 32516
+n = 325161232141232
 string_n = digit_sep(n) 
 print(string_n)
 e = oldsqrt(n)       
